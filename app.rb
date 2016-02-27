@@ -1,3 +1,6 @@
 get '/' do
-  "Sinatra Heroku Cedar Template - The bare minimum for a sinatra app on cedar, running rack, and using bundler."
+" Hello from #{ENV['RACK_ENV']}
+ My secret is: #{ENV['SUPER_SECRET']}
+ My not so secret is: #{ENV['NOT_SECRET']}
+"
 end
